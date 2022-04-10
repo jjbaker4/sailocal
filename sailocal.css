@@ -1,0 +1,77 @@
+* { 
+	box-sizing: border-box; 
+}
+
+
+header {
+	display:  grid;
+	background-color: #B2D5EE;
+	color: #FFFFFF;
+	padding-left: 1em;
+	text-align: center;
+
+}
+
+
+nav{
+	font-weight: bold;
+	padding: 0em;
+	font-size: 120%;
+	text-align: center;
+	/*width: 160px;*/
+}
+
+nav a{
+	text-decoration: none;
+}
+
+nav ul{
+	list-style-type: none;
+	margin: 0px;
+	padding-left: 0px;
+	font-size: 1.2em;
+}
+
+h2{
+	color: #E99425;
+	font-family: Arial, Helvetica, sans-serif;
+	/*text-shadow: 1px 1px 1px #CCCCCC;*/
+}
+
+.logo{
+	/*todo: explicity set a min height*/
+	/*todo: explicity set a fixed width*/
+	grid-row: 1 / 1;
+	grid-column: 1 / 1;
+}
+
+#tagline{
+	grid-row: 2 / 2;
+	grid-column: 1 / 1;
+	color: #E95A25;
+	font-style: italic;
+	font-family: Georgia, "Times New Roman", serif;
+}
+
+
+
+
+@media (min-width: 600px){
+	.logo{
+		grid-row: 1 / 1;
+		grid-column: 1 / 1;
+	}
+
+	#tagline{
+		grid-row: 1 / 1;
+		grid-column: 2 / 4;
+	}
+
+}
+
+
+/*
+NOTES:
+4 color (triad pallet):
+https://paletton.com/#uid=43w0u0kiCFn8GVde7NVmtwSqXtg
+*/
