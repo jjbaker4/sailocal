@@ -122,7 +122,7 @@ input{
 
 
 
-/*---------------------------*/
+/*----------------------------------------------------------------*/
 /*hero_banner properties - narrow*/
 
 
@@ -180,7 +180,7 @@ input{
 
 
 
-/*---------------------------*/
+/*-----------------------------------------------------------*/
 /*homepage feat. pages - narrow*/
 
 
@@ -205,6 +205,7 @@ input{
 	background-position:  left;
 	display: table;
 	margin-bottom: 10px;
+	
 }
 
 .feat_pg_banner a{
@@ -250,8 +251,7 @@ input{
 }
 
 
-
-/*---------------------------*/
+/*-------------------------------------------------------------*/
 /*homepage feat. orgs - narrow*/
 
 
@@ -372,7 +372,6 @@ input{
 		background-image: linear-gradient(to right, #FFFFFF, #B2D5EE);
 	}
 
-
 	nav{
 		background-color: #FFCE8F;
 		font-size: 90%;
@@ -383,12 +382,14 @@ input{
 		/*height: 40px;*/
 		/*todo: how to fix the height and have text centered vertically*/
 	}
+
 	nav ul{
 		display: flex;
 		flex-direction: row;
 		justify-content: space-around;
 		font-size: 1em;
 	}
+
 	nav li{
 		border-bottom: none;
 	}
@@ -396,7 +397,7 @@ input{
 
 	.home main{
 		display: grid;
-		grid-template-columns: auto 270px;
+		grid-template-columns: auto 280px;
 		grid-template-rows: auto;
 	}
 
@@ -445,7 +446,8 @@ input{
 	}
 
 	#container_feat_pages{
-		margin-right: 10px;
+		margin-left: 10px;
+		/*margin-right: 10px;*/
 		grid-column: 1 / 1;
 	}
 
@@ -458,8 +460,10 @@ input{
 	}
 
 	#container_feat_orgs{
+		padding-left: 10px;
 		margin-left: 10px;
-		grid-column: 2 / 3;
+		margin-right: 10px;
+		grid-column: 2 / 2;
 		margin-top: 0px;
 	}
 
@@ -566,7 +570,7 @@ input{
 		grid-column: 1 / 2;
 		text-align: left;
 		padding-left: 1em;
-		margin-right: 10px;
+		/*margin-right: 10px;*/
 		font-size: 100%;
 		margin-top: 10px;
 	}
