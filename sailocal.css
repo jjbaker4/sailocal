@@ -22,7 +22,6 @@ nav{
 
 nav a{
 	text-decoration: none;
-	transition: color 1s ease-out;
 }
 
 nav a:link{
@@ -34,7 +33,7 @@ nav a:visited{
 }
 
 nav a:hover{
-	color: #000000;
+	color: #80B4DA;
 }
 
 nav li{
@@ -81,7 +80,7 @@ input{
 	margin-bottom: .75em;
 }
 
-.logo{
+#sl_logo{
 	/*todo: explicity set a min height?*/
 	/*todo: explicity set a fixed width?*/
 	background-image: url(assets/logo_360_313.png);
@@ -118,6 +117,10 @@ input{
 	vertical-align: middle;
 	padding: 0px;
 	margin: 0px;
+}
+
+#this_page a{
+	color: #E95A25;
 }
 
 
@@ -170,12 +173,12 @@ input{
 
 #homehero{
 	height: 300px;
-	background-image: url(banner_sprint_2.png);
+	background-image: url(assets/900x300_banner_sprint_2.png);
 }
 
 #signuphero{
 	height: 300px;
-	background-image: url(assets/1200x300_signup_banner.png);
+	background-image: url(assets/900x300_signup_banner.png);
 }
 
 
@@ -205,7 +208,7 @@ input{
 	background-position:  left;
 	display: table;
 	margin-bottom: 10px;
-	
+
 }
 
 .feat_pg_banner a{
@@ -351,6 +354,18 @@ input{
 
 
 
+/*------------------------------------------------------------*/
+/*signup page - narrow*/
+
+
+.signup main{
+	margin-top: 20px;
+}
+
+
+
+
+
 
 
 /***********************************************************************************/
@@ -373,12 +388,14 @@ input{
 	}
 
 	nav{
-		background-color: #FFCE8F;
+		background-color: #FFD96B;
 		font-size: 90%;
 		vertical-align: middle;
-		margin-top: 5px;
-		padding-top: 5px;
+		/*margin-top: 5px;*/
+		/*padding-top: 5px;*/
 		padding-bottom: 5px;
+		padding-left: 5px;
+		padding-right: 5px;
 		/*height: 40px;*/
 		/*todo: how to fix the height and have text centered vertically*/
 	}
@@ -400,6 +417,7 @@ input{
 		grid-template-columns: auto 280px;
 		grid-template-rows: auto;
 	}
+
 
 	.signup form{
 		display: grid;
@@ -427,7 +445,7 @@ input{
 		box-shadow: 1px 1px 1px #E99425;
 	}
 
-	.logo{
+	#sl_logo{
 		grid-row:  auto;
 		grid-column: 1 / 1;
 		background-image: url(assets/logo_129_120.png);
@@ -504,7 +522,13 @@ input{
 
 
 
+
 @media (min-width: 1000px){
+
+	nav{
+		padding-left: 7px;
+		padding-right: 7px;
+	}
 
 	nav ul{
 		display: flex;
@@ -569,10 +593,10 @@ input{
 		grid-row: 2 / 5;
 		grid-column: 1 / 2;
 		text-align: left;
-		padding-left: 1em;
 		/*margin-right: 10px;*/
 		font-size: 100%;
 		margin-top: 10px;
+		padding-left: 1em;
 	}
 
 	nav ul{
