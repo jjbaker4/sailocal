@@ -56,10 +56,12 @@ main{
 	overflow: auto;
 }
 
+/*
 main h2{
 	color: #E99425;
 	font-family: Arial, Helvetica, sans-serif;
 }
+*/
 
 footer{
 		font-size: 90%;
@@ -181,6 +183,12 @@ input{
 	background-image: url(assets/900x300_signup_banner.png);
 }
 
+#trimhero{
+	height: 300px;
+	background-image: url(trimmer3_900x300.png);
+}
+
+
 
 
 /*-----------------------------------------------------------*/
@@ -188,12 +196,8 @@ input{
 
 
 #container_feat_pages{
-	/*margin-top: 10px;*/
-	/*margin-right: 5px;*/
 	background-repeat: no-repeat;
 	background-position:  left;
-	/*background-size: 100% 100%;*/
-	/*vertical-align: middle;*/
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-start;
@@ -216,11 +220,11 @@ input{
 }
 
 #feat_pg_1{
-	background-image: url(banner_dist1.png);
+	background-image: url(assets/900x300_banner_dist1.png);
 }
 
 #feat_pg_2{
-	background-image: url(banner_rules_1.png);
+	background-image: url(assets/900x300_banner_rules_1.png);
 }
 
 .feat_pg_text{
@@ -258,13 +262,12 @@ input{
 /*homepage feat. orgs - narrow*/
 
 
+
 #container_feat_orgs{
 	margin-top: 10px;
 	/*background-size: 100% 100%;*/
 	/*vertical-align: middle;*/
-	/*
-	background-repeat: no-repeat;
-	*/
+	/*background-repeat: no-repeat;*/
 	background-position: center;
 	display: flex;
 	flex-direction: column;
@@ -323,21 +326,21 @@ input{
 }
 
 #feat_org_1{
-	background-image: url(org_banner_mssa_260_1000.png);	
+	background-image: url(assets/org_banner_mssa_1000x260.png);	
 }
 
 #logo_org_1{
 }
 
 #feat_org_2{
-	background-image: url(org_banner_pjyc_260_1200.png);
+	background-image: url(assets/org_banner_pjyc_1200x260.png);
 }
 
 #logo_org_2{
 }
 
 #feat_org_3{
-	background-image: url(org_banner_seacliff_600_260.png);
+	background-image: url(assets/org_banner_seacliff_600_260.png);
 }
 
 #logo_org_3{
@@ -353,22 +356,44 @@ input{
 
 
 
-
 /*------------------------------------------------------------*/
-/*signup page - narrow*/
+/*pages - narrow*/
+
 
 
 .signup main{
 	margin-top: 20px;
 }
 
+.trim main{
+	margin-top: 20px;
+}
+
+
+#page_intro_container{
+	/*margin-top: 10px;*/
+	/*margin-right: 5px;*/
+	/*background-repeat: no-repeat;*/
+	/*background-position:  left;*/
+	/*background-size: 100% 100%;*/
+	/*vertical-align: middle;*/
+	/*display: flex;*/
+	/*flex-direction: column;*/
+	/*justify-content: flex-start;*/
+	/*width: 100%;*/
+	padding-left: .5em;
+	margin-bottom: 10px;
+
+}
+
+.page_intro_text{
+	font-family: Arial, Helvetica, sans-serif;
+}
 
 
 
 
-
-
-/***********************************************************************************/
+/********************************************************************************************/
 /*med width*/
 
 
@@ -416,6 +441,10 @@ input{
 		display: grid;
 		grid-template-columns: auto 280px;
 		grid-template-rows: auto;
+	}
+
+	.trim main{
+
 	}
 
 
@@ -509,13 +538,28 @@ input{
 	.feat_org_tile{
 		height: 260px;
 	}
+
+	/*--------------------------------------------------------------*/
+	/*pages - med*/
+
+	#page_intro_container{
+		/*margin-left: 10px;*/
+		/*margin-right: 10px;*/
+	}
+
+	.page_intro_text{
+
+	}
+
 }
 
 
 
 
 
-/***********************************************************************************/
+
+
+/********************************************************************************************/
 
 
 
@@ -567,7 +611,7 @@ input{
 
 
 
-/***********************************************************************************/
+/********************************************************************************************/
 
 
 
