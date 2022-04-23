@@ -340,7 +340,7 @@ input{
 }
 
 #feat_org_3{
-	background-image: url(assets/org_banner_seacliff_600_260.png);
+	background-image: url(assets/org_banner_seacliff_1000_260.png);
 }
 
 #logo_org_3{
@@ -601,6 +601,10 @@ input{
 
 	.feat_org_tile{
 		height: 260px;
+	}
+
+	#feat_org_3{
+		background-image: url(assets/org_banner_seacliff_600_260.png);
 	}
 
 	/*--------------------------------------------------------------*/
