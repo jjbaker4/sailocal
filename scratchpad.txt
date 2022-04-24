@@ -1,0 +1,71 @@
+#feat_orgs_container{
+	margin-top: 10px;
+	/*background-size: 100% 100%;*/
+	/*vertical-align: middle;*/
+	/*background-repeat: no-repeat;*/
+	background-position: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: nowrap;
+	/*width: auto;*/
+	overflow: auto;
+}
+
+
+
+.feat_org_tile{
+	height: 260px;
+	width: 100%;
+	background-repeat: no-repeat;
+	background-position: left;
+	/*display: table;*/
+	margin-bottom: 10px;
+	padding-left: 2em;
+	padding-top: 1em;
+	display: table-cell;
+	text-shadow: 2px 2px 1px #1F2B33;
+}
+
+
+
+#feat_pages_container{
+	background-repeat: no-repeat;
+	background-position:  left;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+
+.feat_pg_banner{
+	height: 300px;
+	width: 100%;
+	background-repeat: no-repeat;
+	background-position:  left;
+	display: table;
+	margin-bottom: 10px;
+
+}
+
+
+.feat_pg_text{
+	padding-left: 2em;
+	padding-top: 3em;
+	display: table-cell;
+	font-family: Arial, Helvetica, sans-serif;
+	text-shadow: 2px 2px 1px #1F2B33;
+}
+
+#feat_pg_1{
+	background-image: url(assets/900x300_banner_dist1.png);
+}
+
+
+
+
+
+gdj opv j bdlj gsa;g lgj fdhgs flk fd lkg jfd jpoi dfjg.,fmj bg kfdj ipdjf;jmf d,mkbjf jgi jdp sj hlkdf .hjda kd fjaf lhd sjhi dj slnhf gnh gdj opv j bdlj gsa;g lgj fdhgs flk fd lkg jfd jpoi dfjg.,fmj bg kfdj ipdjf;jmf d,mkbjf jgi jdp sj hlkdf .hjda kd fjaf lhd sjhi dj slnhf gnh

@@ -423,21 +423,22 @@ input{
 }
 
 .article_image_container{
-	background-position: center;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
 	align-items: center;
-	overflow: auto;
-	margin-left: 2px;
-	margin-right: 2px;
-	margin-top: 2px;
-	margin-bottom: 2px;
-	border: 1px solid;
+	overflow: hidden;
 	font-family: Georgia, "Times New Roman", serif;
 	font-size: 70%;
 	font-style: italic;
 	text-align: center;
+	/*
+	margin-left: 2px;
+	margin-right: 2px;
+	margin-top: 2px;
+	margin-bottom: 2px;
+	*/
+	border: 1px solid;
 }
 
 #trim_section1{
@@ -448,13 +449,17 @@ input{
 	/*width: 200px;*/
 }
 
-#trim_image1{
-	background-image: url(trimmer2_400x260.png);
+.article_image{
 	background-repeat: no-repeat;
 	height: 260px;
 	width: 100%;
 	background-position: right;
-	display: table;
+	overflow: hidden;
+}
+
+#trim_image1{
+	background-image: url(trimmer2_400x260.png);
+	/*remember - the ID always overrides the class*/
 }
 
 
@@ -630,16 +635,18 @@ input{
 	}
 
 	.article_section{
-		display: flex;
+		/*display: flex;
 		flex-direction: row;
 		justify-content: space-between;
+		*/
+		display: grid;
+		grid-template-columns: auto 300px;
 		margin-left: 1em;
 		margin-right: 1em;
 		/*todo: decide uf you really want this border*/
 		border: 1px solid;
 	}
 }
-
 
 
 
