@@ -399,8 +399,11 @@ input{
 	flex-direction: column;
 	margin-left: 1em;
 	margin-right: 1em;
+	margin-bottom: .5em;
 	/*todo: decide uf you really want this border*/
 	border: 1px solid;
+	overflow: hidden;
+
 }
 
 .article_text_container{
@@ -427,7 +430,7 @@ input{
 	flex-direction: column;
 	justify-content: space-between;
 	align-items: center;
-	overflow: hidden;
+	/*overflow: hidden;*/
 	font-family: Georgia, "Times New Roman", serif;
 	font-size: 70%;
 	font-style: italic;
@@ -439,25 +442,64 @@ input{
 	margin-bottom: 2px;
 	*/
 	border: 1px solid;
+	min-height: 260px; /*seems to be a good setting for med/wide*/
+	/*min-width: 400px; */
 }
 
 #trim_section1{
 
 }
 
-#trim_image1_cont{
+#trim_image1_container{
 	/*width: 200px;*/
 }
 
-.article_image{
+.article_image_fixed_height{
+	/*seems to work ok for narrow*/
 	background-repeat: no-repeat;
 	height: 260px;
 	width: 100%;
+	background-position: center;
+	overflow: hidden;
+}
+
+.article_image_fixed_width{
+	/*probably not going to use this one*/
+	background-repeat: no-repeat;
+	/*
+	width: 400px;
+	height: 100%;
+	*/
+	/*background-size: 400px 100%;*/
 	background-position: right;
 	overflow: hidden;
 }
 
+.article_image_contain{
+	background-repeat: no-repeat;
+	background-position: right;
+	background-size: contain;
+	overflow: hidden;
+}
+
+.article_image_cover{
+	background-repeat: no-repeat;
+	background-position: right;
+	background-size: cover;
+	width: 100%;
+	overflow: hidden;
+}
+
+.article_image_100{
+	background-repeat: no-repeat;
+	background-position: right;
+	background-size: 100% 100%;
+	overflow: hidden;
+}
+
 #trim_image1{
+	/*min-height: 260px;*/
+	/*min-width: 400px;*/
 	background-image: url(trimmer2_400x260.png);
 	/*remember - the ID always overrides the class*/
 }
@@ -640,10 +682,10 @@ input{
 		justify-content: space-between;
 		*/
 		display: grid;
-		grid-template-columns: auto 300px;
+		grid-template-columns: auto auto;
 		margin-left: 1em;
 		margin-right: 1em;
-		/*todo: decide uf you really want this border*/
+		/*todo: decide if you really want this border*/
 		border: 1px solid;
 	}
 }
