@@ -370,16 +370,6 @@ input{
 
 
 #page_intro_container{
-	/*margin-top: 10px;*/
-	/*margin-right: 5px;*/
-	/*background-repeat: no-repeat;*/
-	/*background-position:  left;*/
-	/*background-size: 100% 100%;*/
-	/*vertical-align: middle;*/
-	/*display: flex;*/
-	/*flex-direction: column;*/
-	/*justify-content: flex-start;*/
-	/*width: 100%;*/
 	margin-left: .5em;
 	margin-right: .5em;
 	margin-bottom: 10px;
@@ -435,15 +425,17 @@ input{
 	font-size: 70%;
 	font-style: italic;
 	text-align: center;
-	/*
+	
 	margin-left: 2px;
 	margin-right: 2px;
 	margin-top: 2px;
 	margin-bottom: 2px;
-	*/
+	
 	border: 1px solid;
 	min-height: 260px; /*seems to be a good setting for med/wide*/
 	/*min-width: 400px; */
+	/*max-width: 300px; /*use max-width for med/wide and set alignment for that image*/
+	/*max-width: 60%;*/
 }
 
 #trim_section1{
@@ -451,16 +443,7 @@ input{
 }
 
 #trim_image1_container{
-	/*width: 200px;*/
-}
-
-.article_image_fixed_height{
-	/*seems to work ok for narrow*/
-	background-repeat: no-repeat;
-	height: 260px;
-	width: 100%;
-	background-position: center;
-	overflow: hidden;
+	
 }
 
 .article_image_fixed_width{
@@ -495,6 +478,19 @@ input{
 	background-position: right;
 	background-size: 100% 100%;
 	overflow: hidden;
+}
+
+.article_image_fixed_height{
+	
+	/*this seems to be our pick*/
+	background-repeat: no-repeat;
+	height: 260px;
+	width: 100%;
+	background-position: center; /*position center for narrow mode but could be left or
+	right in wider modes*/
+	overflow: hidden;
+	/*have to decide if we want to use cover (in narrow mode)*/
+	/*background-size: cover;*/
 }
 
 #trim_image1{
