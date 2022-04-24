@@ -370,6 +370,7 @@ input{
 
 
 .trim .wrapper{
+	margin: auto;
 	max-width: 550px;
 }
 
@@ -378,7 +379,6 @@ input{
 	margin-left: .5em;
 	margin-right: .5em;
 	margin-bottom: 10px;
-
 }
 
 #trim_intro_container{
@@ -399,7 +399,7 @@ input{
 	margin-right: 1em;
 	margin-bottom: .5em;
 	/*todo: decide if you really want this border*/
-	border: 1px solid;
+	/*border: 1px solid;*/
 	overflow: hidden;
 }
 
@@ -411,24 +411,20 @@ input{
 }
 
 .article_image_container{
+	/*NARROW*/
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
 	align-items: center;
-	/*overflow: hidden;*/
 	margin-left: 2px;
 	margin-right: 2px;
 	margin-top: 2px;
 	margin-bottom: 2px;
-	
-	border: 1px solid;
-	/*min-height: 260px; /*seems to be a good setting for med/wide*/*/
-	/*min-width: 400px;*/
-	/*max-width: 300px; /*use max-width for med/wide and set alignment for that image*/
-	/*max-width: 60%;*/
+	/*border: 1px solid;*/
 }
 
 .article_image_container p{
+	/*NARROW*/
 	font-family: Georgia, "Times New Roman", serif;
 	font-size: 70%;
 	font-style: italic;
@@ -457,43 +453,49 @@ input{
 }
 
 #trim_image1{
+	/*NARROW*/
 	height: 320px;
 	background-size: contain;
 	background-image: url(pointofsail_735x690.png);
 }
 
 #trim_image2{
+	/*NARROW*/
 	height: 240px;
 	background-image: url(assets/trimmer2_400x260.png);
 }
 
 #trim_image3{
+	/*NARROW*/
 	height: 240px;
 	background-image: url(assets/trimmer2_400x260.png);
 }
 
 .article_text_container{
+	/*NARROW*/
 	font-family: Arial, Helvetica, sans-serif;
-	border: 1px solid;
 	margin-left: 2px;
 	margin-right: 2px;
 	margin-top: 2px;
 	margin-bottom: 2px;
+	/*border: 1px solid;*/
 }
 
 .article_text_container p{
+	/*NARROW*/
 	padding-left: .5em;
 	margin-top:  0px;
 	margin-bottom: 0px;
 }
 
 .article_text_container h3{
+	/*NARROW*/
 	margin-top: 0px;
 	margin-bottom: 0px;
 }
 
 #trim_text_container1{
-	min-height: 350px;
+	
 }
 
 
@@ -673,20 +675,12 @@ input{
 	}
 
 	.article_section{
-		/*article section default settings for med/wide*/
+		/*article section default settings for MED/WIDE*/
 		display: flex;
 		flex-direction: row;
 		justify-content: space-between;
-		
-		/*
-		display: grid;
-		grid-template-columns: auto auto;
-		*/
 		margin-left: 1em;
 		margin-right: 1em;
-		/*todo: decide if you really want this border*/
-		border: 1px solid;
-		/*overflow: hidden;*/
 	}
 
 
@@ -722,9 +716,9 @@ input{
 	}
 
 	.article_text_container{
-		border: 1px solid;
-		margin-left: 2px;
-		margin-right: 2px;
+		/*med/wide*/
+		margin-left: 1em;
+		margin-right: 1em;
 		margin-top: 2px;
 		margin-bottom: 2px;
 	}
@@ -741,13 +735,10 @@ input{
 	}
 
 	#trim_text_container1{
-		min-height: none;
 	}
 	#trim_text_container2{
-		min-height: none;
 	}
 	#trim_text_container3{
-		min-height: none;
 	}
 
 }
