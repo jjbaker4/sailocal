@@ -390,10 +390,16 @@ input{
 	margin-left: 1em;
 	margin-right: 1em;
 	margin-bottom: .5em;
-	/*todo: decide uf you really want this border*/
+	/*todo: decide if you really want this border*/
 	border: 1px solid;
 	overflow: hidden;
+}
 
+#trim_section1{
+}
+#trim_section2{
+}
+#trim_section3{
 }
 
 .article_image_container{
@@ -402,51 +408,64 @@ input{
 	justify-content: space-between;
 	align-items: center;
 	/*overflow: hidden;*/
-	font-family: Georgia, "Times New Roman", serif;
-	font-size: 70%;
-	font-style: italic;
-	text-align: center;
-	
 	margin-left: 2px;
 	margin-right: 2px;
 	margin-top: 2px;
 	margin-bottom: 2px;
 	
 	border: 1px solid;
-	min-height: 260px; /*seems to be a good setting for med/wide*/
-	/*min-width: 400px; */
+	/*min-height: 260px; /*seems to be a good setting for med/wide*/*/
+	/*min-width: 400px;*/
 	/*max-width: 300px; /*use max-width for med/wide and set alignment for that image*/
 	/*max-width: 60%;*/
 }
 
-#trim_section1{
-
+.article_image_container p{
+	font-family: Georgia, "Times New Roman", serif;
+	font-size: 70%;
+	font-style: italic;
+	text-align: center;
+	margin-bottom: 2px;
+	margin-top: 6px;
 }
 
 #trim_image1_container{
-	
+}
+#trim_image2_container{
+}
+#trim_image3_container{
 }
 
 
 .article_image{
-	/*default narrow settings for image in article sections*/
+	/*default NARROW settings for image in article sections*/
 	background-repeat: no-repeat;
 	height: 260px;
 	width: 100%;
-	background-position: center; /*position center for narrow mode but could be left or
-	right in wider modes*/
+	background-position: center;
 	overflow: hidden;
-	/*have to decide if we want to use cover (in narrow mode)*/
+	/*todo:  have to decide if we want to use cover*/
 	/*background-size: cover;*/
 }
 
 #trim_image1{
-	background-image: url(trimmer2_400x260.png);
+	height: 320px;
+	background-size: contain;
+	background-image: url(pointofsail_735x690.png);
 }
 
+#trim_image2{
+	height: 240px;
+	background-image: url(assets/trimmer2_400x260.png);
+}
 
+#trim_image3{
+	height: 240px;
+	background-image: url(assets/trimmer2_400x260.png);
+}
 
 .article_text_container{
+	font-family: Arial, Helvetica, sans-serif;
 	border: 1px solid;
 	margin-left: 2px;
 	margin-right: 2px;
@@ -618,7 +637,6 @@ input{
 	/*pages - med*/
 
 	.trim main{
-		
 	}
 
 	#page_intro_container{
@@ -628,21 +646,21 @@ input{
 	}
 
 	.page_intro_text{
-
 	}
 
 	.page_intro_text p{
-		
 	}
 
 	.article_section{
-		/*article section default settings for med"
-		/*display: flex;
+		/*article section default settings for med/wide*/
+		display: flex;
 		flex-direction: row;
 		justify-content: space-between;
-		*/
+		
+		/*
 		display: grid;
 		grid-template-columns: auto auto;
+		*/
 		margin-left: 1em;
 		margin-right: 1em;
 		/*todo: decide if you really want this border*/
@@ -652,32 +670,41 @@ input{
 
 
 	.article_image_container{
-		display: flex;
-		flex-direction: column;
-		justify-content: space-between;
-		align-items: center;
-		/*overflow: hidden;*/
-		font-family: Georgia, "Times New Roman", serif;
-		font-size: 70%;
-		font-style: italic;
-		text-align: center;
-		
-		margin-left: 2px;
-		margin-right: 2px;
-		margin-top: 2px;
-		margin-bottom: 2px;
-		
-		border: 1px solid;
-		min-height: 260px; /*seems to be a good setting for med/wide*/
-		/*min-width: 400px; */
-		/*max-width: 300px; /*use max-width for med/wide and set alignment for that image*/
-		/*max-width: 60%;*/
+	}
+
+	#trim_image1_container{
+		min-width: 60%;
+	}
+	#trim_image2_container{
+	}
+	#trim_image3_container{
+	}
+
+	#trim_image1{
+		width: 100%;
+		height: 450px;
+		background-size: contain;
+		background-position: center;
+	}
+
+	#trim_image2{
+		background-position: right;
+		width: 200px;
+	}
+	#trim_image3{
+		background-position: right;
+		width: 200px;
 	}
 
 	.article_image{
 		/*default med/wide settings for image in article sections*/
-		background-position: right; /*position center for narrow mode but could be left or
+		/*background-position: right; /*position center for narrow mode but could be left or
 		right in wider modes*/
+		/*width: 100%;*/
+		background-size: cover;
+		/*width: 200px;*/
+		/*height: 200px;*/
+		
 	}
 
 	.article_text_container{
