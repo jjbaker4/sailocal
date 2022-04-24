@@ -212,7 +212,6 @@ input{
 	background-position:  left;
 	display: table;
 	margin-bottom: 10px;
-
 }
 
 .feat_pg_banner a{
@@ -424,17 +423,21 @@ input{
 }
 
 .article_image_container{
-	font-size: 70%;
-	font-style: italic;
-	text-align: center;
-	font-family: Georgia, "Times New Roman", serif;
+	background-position: center;
 	display: flex;
 	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	overflow: auto;
 	margin-left: 2px;
 	margin-right: 2px;
 	margin-top: 2px;
 	margin-bottom: 2px;
 	border: 1px solid;
+	font-family: Georgia, "Times New Roman", serif;
+	font-size: 70%;
+	font-style: italic;
+	text-align: center;
 }
 
 #trim_section1{
@@ -446,14 +449,12 @@ input{
 }
 
 #trim_image1{
-	/*height: 260px;*/
-	width: 100%;
-	/*width: 400px;*/
 	background-image: url(trimmer2_400x260.png);
 	background-repeat: no-repeat;
+	height: 260px;
+	width: 100%;
 	background-position: right;
 	display: table;
-	/*margin-top: 10px;*/
 }
 
 
