@@ -411,7 +411,6 @@ input{
 	flex-direction: row;
 }
 #crew_section2{
-	flex-direction: row;
 }
 
 .article_image_container{
@@ -708,6 +707,9 @@ input{
 		margin-right: 1em;
 	}
 
+	#crew_section2{
+		margin-bottom: 1em;
+	}
 
 	.article_image_container{
 		/*MED/WIDE*/
