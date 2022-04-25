@@ -407,12 +407,11 @@ input{
 	overflow: hidden;
 }
 
-#trim_section1{
-}
 #trim_section2{
 	flex-direction: row;
 }
-#trim_section3{
+#crew_section2{
+	flex-direction: row;
 }
 
 .article_image_container{
@@ -478,7 +477,7 @@ input{
 #crew_image1{
 	/*NARROW*/
 	height: 260px;
-	background-image: url(crew1_400x260.png);
+	background-image: url(assets/crew1_400x260.png);
 }
 #crew_image2{
 	margin: auto;
