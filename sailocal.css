@@ -56,20 +56,15 @@ main{
 	overflow: auto;
 }
 
-/*
-main h2{
-	color: #E99425;
-	font-family: Arial, Helvetica, sans-serif;
-}
-*/
-
 footer{
 		font-size: 90%;
 		font-style: italic;
 		text-align: center;
 		font-family: Georgia, "Times New Roman", serif;
-		padding-bottom: 0px;
-		padding-top: 2em;
+		/*padding-bottom: 1em;*/
+		/*padding-top: 2em;*/
+		margin-top: 2em;
+		margin-bottom: 1em;
 		background-color: #FFFFFF;
 	}
 
@@ -82,9 +77,27 @@ input{
 	margin-bottom: .75em;
 }
 
+table{
+	border: 3px solid #80B4DA;
+	border-collapse: collapse;
+}
+
+td{
+	border: 2px solid #80B4DA;
+	padding: 0.5em;
+	text-align: center;
+}
+
+th{
+	border: 2px solid #80B4DA;
+	padding: 0.5em;
+}
+
+tr:nth-of-type(odd){
+	background-color: #DEEFFB;
+}
+
 #sl_logo{
-	/*todo: explicity set a min height?*/
-	/*todo: explicity set a fixed width?*/
 	background-image: url(assets/logo_360_313.png);
 	background-repeat: no-repeat;
 	background-position: center;
@@ -92,8 +105,6 @@ input{
 	padding-top: 2em;
 	padding-bottom: 2em;
 	vertical-align: center;
-	/*todo:  look at other background size options/*
-	/*background-size: contain;*/
 }
 
 
@@ -152,6 +163,10 @@ input{
 	font-family: Arial, Helvetica, sans-serif;
 }
 
+#ruleshero .herotext{
+	padding-top: 4.5em;
+}
+
 .herotext h1{
 	margin-bottom: 0px;
 	margin-top: 0px;
@@ -192,6 +207,12 @@ input{
 	height: 300px;
 	background-image: url(assets/joe_chris_900x300.png);
 	background-position: right;
+}
+
+#ruleshero{
+	height: 400px;
+	background-image: url(assets/rules_hero1_900x400.png);
+	background-position: center;
 }
 
 
@@ -268,16 +289,12 @@ input{
 
 #feat_orgs_container{
 	margin-top: 10px;
-	/*background-size: 100% 100%;*/
-	/*vertical-align: middle;*/
-	/*background-repeat: no-repeat;*/
 	background-position: center;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
 	align-items: center;
 	flex-wrap: nowrap;
-	/*width: auto;*/
 	overflow: auto;
 }
 
@@ -287,15 +304,11 @@ input{
 	width: 100%;
 	background-repeat: no-repeat;
 	background-position: left;
-	/*display: table;*/
 	margin-bottom: 10px;
 	padding-left: 2em;
 	padding-top: 1em;
 	display: table-cell;
 	text-shadow: 2px 2px 1px #1F2B33;
-}
-
-.logo_org{
 }
 
 
@@ -331,30 +344,14 @@ input{
 #feat_org_1{
 	background-image: url(assets/org_banner_mssa_1000x260.png);	
 }
-
-#logo_org_1{
-}
-
 #feat_org_2{
 	background-image: url(assets/org_banner_pjyc_1200x260.png);
 }
-
-#logo_org_2{
-}
-
 #feat_org_3{
 	background-image: url(assets/org_banner_seacliff_1000_260.png);
 }
-
-#logo_org_3{
-}
-
 #feat_org_4{
 	background-image: url(org_placeholder_260_1000.png);
-}
-
-#logo_org_4{
-	
 }
 
 
@@ -372,20 +369,15 @@ input{
 	margin-top: 20px;
 }
 
-
 .catpage .wrapper{
 	margin: auto;
 	max-width: 550px;
 }
 
-
 .page_intro_container{
 	margin-left: .5em;
 	margin-right: .5em;
 	margin-bottom: 10px;
-}
-
-#trim_intro_container{
 }
 
 .page_intro_text{
@@ -397,20 +389,18 @@ input{
 }
 
 .article_section{
+	/*NARROW*/
 	display: flex;
 	flex-direction: column;
 	margin-left: 1em;
 	margin-right: 1em;
-	margin-bottom: .5em;
-	/*todo: decide if you really want this border*/
-	/*border: 1px solid;*/
+	margin-bottom: 1em;
+	margin-top: 1em;
 	overflow: hidden;
 }
 
 #trim_section2{
 	flex-direction: row;
-}
-#crew_section2{
 }
 
 .article_image_container{
@@ -436,15 +426,6 @@ input{
 	margin-top: 6px;
 }
 
-#trim_image1_container{}
-#trim_image2_container{}
-#trim_image3_container{}
-
-#crew_image1_container{}
-#crew_image2_container{}
-#crew_image3_container{}
-
-
 .article_image{
 	/*NARROW*/
 	background-repeat: no-repeat;
@@ -452,8 +433,6 @@ input{
 	width: 100%;
 	background-position: center;
 	overflow: hidden;
-	/*todo:  have to decide if we want to use cover*/
-	/*background-size: cover;*/
 }
 
 #trim_image1{
@@ -478,15 +457,12 @@ input{
 	height: 260px;
 	background-image: url(assets/crew1_400x260.png);
 }
-#crew_image2{
-	margin: auto;
-	height: 300px;
-	width: 135px;
-	background-image: url(assets/telltales1_135x300.png);
-}
-#crew_image3{
-	height: 240px;
-	background-image: url(assets/trimmer2_400x260.png);
+
+#rules_image1{
+	/*NARROW*/
+	height: 280px;
+	background-size: contain;
+	background-image: url(assets/rules_cover_760x576.png);
 }
 
 .article_text_container{
@@ -496,7 +472,6 @@ input{
 	margin-right: 2px;
 	margin-top: 2px;
 	margin-bottom: 2px;
-	/*border: 1px solid;*/
 }
 
 .article_text_container a{
@@ -621,6 +596,10 @@ input{
 		padding-left: 3em;
 	}
 
+	#ruleshero .herotext{
+		padding-top: 5.5em;
+	}
+
 	.hero_banner h3{
 		font-size: medium;
 	}
@@ -711,6 +690,11 @@ input{
 		margin-bottom: 1em;
 	}
 
+	#rules_section3{
+		flex-direction: column;
+		justify-content: flex-start;
+	}
+
 	.article_image_container{
 		/*MED/WIDE*/
 	}
@@ -719,14 +703,29 @@ input{
 		min-width: 60%;
 	}
 	#trim_image2_container{}
-	#trim_image3_container{}
-
+	#trim_image3_container{
+		margin-top: 25px;
+	}
 
 	#crew_image1_container{
-
+		margin-top: 25px;
 	}
 	#crew_image2_container{}
-	#crew_image3_container{}
+	#crew_image3_container{
+		margin-top: 25px;
+	}
+	#crew_image4_container{
+		margin-top: 25px;
+	}
+
+	#rules_image1_container{
+		min-width: 40%;
+	}
+
+	.article_image{
+		/*MED/WIDE*/
+		background-size: cover;
+	}
 
 	#trim_image1{
 		/*MED/WIDE*/
@@ -749,15 +748,12 @@ input{
 		width: 250px;
 	}
 
-	#crew_image2{
-	}
-	#crew_image3{
-		background-position: right;
-		width: 200px;
-	}
-
-	.article_image{
-		background-size: cover;
+	#rules_image1{
+		/*MED/WIDE*/
+		width: 100%;
+		
+		background-size: contain;
+		background-position: center;
 	}
 
 	.article_text_container{
@@ -912,11 +908,3 @@ input{
 	}
 }
 
-
-
-
-/*
-NOTES:
-4 color (triad pallet):
-https://paletton.com/#uid=43w0u0kiCFn8GVde7NVmtwSqXtg
-*/
