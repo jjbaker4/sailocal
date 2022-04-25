@@ -1,71 +1,12 @@
-#feat_orgs_container{
-	margin-top: 10px;
-	/*background-size: 100% 100%;*/
-	/*vertical-align: middle;*/
-	/*background-repeat: no-repeat;*/
-	background-position: center;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	align-items: center;
-	flex-wrap: nowrap;
-	/*width: auto;*/
-	overflow: auto;
-}
+Crew work is pretty much everything else. The context of the term here refers to anything crew members have to do to handle maneuvers such as tacks, jibes, sail changes, and any kind of corrective action needed to be performed on the rigging. There are specific roles that you will sometimes hear referring to different members of a crew: Bowman, mastman, pit, to name a few. On larger boats you will sometimes hear them referred to collectively as the foredeck crew. However, on most small to medium boats, everyone will have 3-4 roles depending on point of sail and what maneuver is currently being performed. Unless you are the helmsman you will find yourself doing many of these "crew" activities. 
+ 
+ A new team member will be tapped during some of the more complex manuevers and given tasks that they may not fully understand. It's important that they pay careful attention to the instructions before the maneuver is performed, asking clarifying questions up front. During the maneuver it's critical to listen for further instructions, as the situation can change quickly. This is as important for crew safety as it is for boat performance.
 
+ It's common for newer team members to be given simple tasks to carry out during complex maneuvers. A novice may not fully understand purpose of the task, so it's important that they pay careful attention to the instructions before the maneuver is performed, and ask clarifying questions up front. During the maneuver it's critical to listen for further instructions, as the situation can change quickly. This is as important for crew safety as it is for boat performance.
 
-
-.feat_org_tile{
-	height: 260px;
-	width: 100%;
-	background-repeat: no-repeat;
-	background-position: left;
-	/*display: table;*/
-	margin-bottom: 10px;
-	padding-left: 2em;
-	padding-top: 1em;
-	display: table-cell;
-	text-shadow: 2px 2px 1px #1F2B33;
-}
-
-
-
-#feat_pages_container{
-	background-repeat: no-repeat;
-	background-position:  left;
-	display: flex;
-	flex-direction: column;
-	justify-content: flex-start;
-	width: 100%;
-	margin-bottom: 20px;
-}
-
-
-.feat_pg_banner{
-	height: 300px;
-	width: 100%;
-	background-repeat: no-repeat;
-	background-position:  left;
-	display: table;
-	margin-bottom: 10px;
-
-}
-
-
-.feat_pg_text{
-	padding-left: 2em;
-	padding-top: 3em;
-	display: table-cell;
-	font-family: Arial, Helvetica, sans-serif;
-	text-shadow: 2px 2px 1px #1F2B33;
-}
-
-#feat_pg_1{
-	background-image: url(assets/900x300_banner_dist1.png);
-}
-
-
-
-
-
-gdj opv j bdlj gsa;g lgj fdhgs flk fd lkg jfd jpoi dfjg.,fmj bg kfdj ipdjf;jmf d,mkbjf jgi jdp sj hlkdf .hjda kd fjaf lhd sjhi dj slnhf gnh gdj opv j bdlj gsa;g lgj fdhgs flk fd lkg jfd jpoi dfjg.,fmj bg kfdj ipdjf;jmf d,mkbjf jgi jdp sj hlkdf .hjda kd fjaf lhd sjhi dj slnhf gnh
+ <h3>Pay Close Attention</h3>
+  					<p>
+  						It's common for newer team members to be given simple tasks to carry out during complex maneuvers. A novice may not fully understand purpose of the task, so it's important that they pay careful attention to the instructions before the maneuver is performed, and ask clarifying questions up front. During the maneuver it's critical to listen for further instructions, as the situation can change quickly. This is as important for crew safety as it is for boat performance. 
+  						<br>
+  						For example, before a jibe, you may be handed a line and told that will eventually be called upon to pull on it. The expectation is that you will standby, line in hand, and listen for the order. Explaining what the line does in great detail is probably not practical in the moment, but a good question to ask is "what am I looking at?" 
+  					</p>

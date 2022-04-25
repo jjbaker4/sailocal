@@ -188,7 +188,11 @@ input{
 	background-image: url(assets/trimmer_hero_900x300.png);
 }
 
-
+#crewhero{
+	height: 300px;
+	background-image: url(assets/joe_chris_900x300.png);
+	background-position: right;
+}
 
 
 /*-----------------------------------------------------------*/
@@ -364,12 +368,12 @@ input{
 	margin-top: 20px;
 }
 
-.trim main{
+.catpage main{
 	margin-top: 20px;
 }
 
 
-.trim .wrapper{
+.catpage .wrapper{
 	margin: auto;
 	max-width: 550px;
 }
@@ -406,6 +410,7 @@ input{
 #trim_section1{
 }
 #trim_section2{
+	flex-direction: row;
 }
 #trim_section3{
 }
@@ -433,16 +438,17 @@ input{
 	margin-top: 6px;
 }
 
-#trim_image1_container{
-}
-#trim_image2_container{
-}
-#trim_image3_container{
-}
+#trim_image1_container{}
+#trim_image2_container{}
+#trim_image3_container{}
+
+#crew_image1_container{}
+#crew_image2_container{}
+#crew_image3_container{}
 
 
 .article_image{
-	/*default NARROW settings for image in article sections*/
+	/*NARROW*/
 	background-repeat: no-repeat;
 	height: 260px;
 	width: 100%;
@@ -456,17 +462,31 @@ input{
 	/*NARROW*/
 	height: 320px;
 	background-size: contain;
-	background-image: url(pointofsail_735x690.png);
+	background-image: url(assets/pointofsail_735x690.png);
 }
-
 #trim_image2{
-	/*NARROW*/
+	margin: auto;
+	height: 300px;
+	width: 135px;
+	background-image: url(assets/telltales1_135x300.png);
+}
+#trim_image3{
 	height: 240px;
 	background-image: url(assets/trimmer2_400x260.png);
 }
 
-#trim_image3{
+#crew_image1{
 	/*NARROW*/
+	height: 260px;
+	background-image: url(crew1_400x260.png);
+}
+#crew_image2{
+	margin: auto;
+	height: 300px;
+	width: 135px;
+	background-image: url(assets/telltales1_135x300.png);
+}
+#crew_image3{
 	height: 240px;
 	background-image: url(assets/trimmer2_400x260.png);
 }
@@ -481,6 +501,12 @@ input{
 	/*border: 1px solid;*/
 }
 
+.article_text_container a{
+	text-decoration: none;
+	color: #E95A25;
+	font-weight: bold;
+}
+
 .article_text_container p{
 	/*NARROW*/
 	padding-left: .5em;
@@ -492,10 +518,6 @@ input{
 	/*NARROW*/
 	margin-top: 0px;
 	margin-bottom: 0px;
-}
-
-#trim_text_container1{
-	
 }
 
 
@@ -571,7 +593,7 @@ input{
 		width: 9em;
 	}
 
-	.trim .wrapper{
+	.catpage .wrapper{
 		margin: auto;
 		width: 90%;
 		max-width: 900px;
@@ -656,10 +678,14 @@ input{
 		background-image: url(assets/org_banner_seacliff_600_260.png);
 	}
 
+
+
 	/*--------------------------------------------------------------*/
 	/*pages - med*/
 
-	.trim main{
+
+
+	.catpage main{
 	}
 
 	.page_intro_container{
@@ -685,17 +711,24 @@ input{
 
 
 	.article_image_container{
+		/*MED/WIDE*/
 	}
 
 	#trim_image1_container{
 		min-width: 60%;
 	}
-	#trim_image2_container{
+	#trim_image2_container{}
+	#trim_image3_container{}
+
+
+	#crew_image1_container{
+
 	}
-	#trim_image3_container{
-	}
+	#crew_image2_container{}
+	#crew_image3_container{}
 
 	#trim_image1{
+		/*MED/WIDE*/
 		width: 100%;
 		height: 450px;
 		background-size: contain;
@@ -703,10 +736,21 @@ input{
 	}
 
 	#trim_image2{
+	}
+	#trim_image3{
 		background-position: right;
 		width: 200px;
 	}
-	#trim_image3{
+
+	#crew_image1{
+		/*MED/WIDE*/
+		background-position: center;
+		width: 250px;
+	}
+
+	#crew_image2{
+	}
+	#crew_image3{
 		background-position: right;
 		width: 200px;
 	}
@@ -732,13 +776,6 @@ input{
 	.article_text_container h3{
 		margin-top: 0px;
 		margin-bottom: 0px;
-	}
-
-	#trim_text_container1{
-	}
-	#trim_text_container2{
-	}
-	#trim_text_container3{
 	}
 
 }
@@ -809,7 +846,7 @@ input{
 
 @media (min-width: 1200px){
 
-	.trim .wrapper{
+	.catpage .wrapper{
 		display: grid;
 		grid-template-columns: 195px auto;
 		grid-template-rows: auto;
@@ -862,7 +899,7 @@ input{
 
 	.hero_banner {
 		grid-row: 2 / 3;
-		grid-column:  2 / 3;
+		grid-column:  2 / 2;
 	}
 
 	#tagline{

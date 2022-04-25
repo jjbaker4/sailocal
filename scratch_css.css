@@ -1,0 +1,43 @@
+.article_image{
+	/*NARROW*/
+	background-repeat: no-repeat;
+	height: 260px;
+	width: 100%;
+	background-position: center;
+	overflow: hidden;
+	/*todo:  have to decide if we want to use cover*/
+	/*background-size: cover;*/
+}
+
+#trim_image1{
+	/*NARROW*/
+	height: 320px;
+	background-size: contain;
+	background-image: url(assets/pointofsail_735x690.png);
+}
+#trim_image2{
+	margin: auto;
+	height: 300px;
+	width: 135px;
+	background-image: url(assets/telltales1_135x300.png);
+}
+#trim_image3{
+	height: 240px;
+	background-image: url(assets/trimmer2_400x260.png);
+}
+
+#crew_image1{
+	/*NARROW*/
+	height: 320px;
+	background-image: url(crew1_1000x667.png);
+}
+#crew_image2{
+	margin: auto;
+	height: 300px;
+	width: 135px;
+	background-image: url(assets/telltales1_135x300.png);
+}
+#crew_image3{
+	height: 240px;
+	background-image: url(assets/trimmer2_400x260.png);
+}
