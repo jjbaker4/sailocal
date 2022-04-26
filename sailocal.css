@@ -325,6 +325,7 @@ tr:nth-of-type(odd){
 
 .feat_org_tile h2{
 	color: #FFFFFF;
+	font-family: Arial, Helvetica, sans-serif;
 	margin-bottom: 0px;
 	margin-top: 0px;
 }
